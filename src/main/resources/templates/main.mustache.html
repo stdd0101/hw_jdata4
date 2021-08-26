@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>Список пользвателей</div>
+<form method="post" action="by-city">
+    <input type="text" name="cityOfLiving">
+    <button type="submit">Найти по городу</button>
+</form>
+{{#persons}}
+<div>
+    <b>{{id}}</b>
+    <span>{{name}}</span>
+    <i>{{cityOfLiving}}</i>
+</div>
+{{/persons}}
+</body>
+</html>
